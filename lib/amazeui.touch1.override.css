@@ -1,0 +1,59 @@
+/* accordion styles */
+.accordion-title .accordion-icon{
+  font-size: 1rem;
+}
+
+/* bntton styles */
+.btn{
+  border-radius: 3px;
+}
+.btn-primary {
+  background: #218bf5;
+  border: 1px solid #218bf5;
+}
+.btn-secondary{
+  background: #3bb4f2;
+  border: 1px solid #3bb4f2;
+}
+.btn-success{
+  background: #59c831;
+  border: 1px solid #59c831;
+}
+.btn-warning{
+  background: #fd8e1c;
+  border: 1px solid #fd8e1c;
+}
+.btn-alert{
+  background: #fb3636;
+  border: 1px solid #fb3636;
+}
+.btn-dark{
+  background: #393939;
+  border: 1px solid #393939;
+}
+
+/* card styles */
+.card{
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* navbar styles */
+.navbar-primary{
+  background: #218bf5;
+}
+.navbar-secondary{
+  background: #3bb4f2;
+}
+.navbar-success{
+  background: #59c831;
+}
+.navbar-warning{
+  background: #fd8e1c;
+}
+.navbar-alert{
+  background: #fb3636;
+}
+.navbar-dark{
+  background: #393939;
+}

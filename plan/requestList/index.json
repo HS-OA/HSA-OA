@@ -1,0 +1,452 @@
+{
+  "version": "0.1",
+  "id": "requestList",
+  "targetURL": "http://183.62.237.225:8090/sys/person/home.do?nav=153cb8f664e9b12388b9a754470b7cea#cri.q=myDoc:create",
+  "jsFile": "index.js",
+  "chineseName": "请求列表",
+  "description": "",
+  "controls": {
+    "control0_HMVmei": {
+      "location": {
+        "data": {
+          "tagName": "TR"
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 1,
+            "value": "descendant::DIV[@id=\"listview\"]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/THEAD[1]/TR[1]"
+          },
+          {
+            "id": "@id/partialWord",
+            "prob": 1,
+            "disabled": true,
+            "value": {
+              "elemId": "lui-id-46",
+              "tagName": "DIV",
+              "prefix": "DIV[@id=\"listview\"]//",
+              "suffix": "/DIV[3]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/THEAD[1]/TR[1]",
+              "ratio": 0.266
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.lui_listview_centerR DIV.lui_listview_centerC TABLE.lui_listview_columntable_table THEAD TR"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/DIV[1]/DIV[4]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]/THEAD[1]/TR[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control0_HMVmei"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": true,
+      "frameXPath": "",
+      "componentType": "custom"
+    },
+    "control1_1wczxR": {
+      "location": {
+        "data": {
+          "tagName": "TABLE"
+        },
+        "locators": [
+          {
+            "id": "@id/word",
+            "prob": 1,
+            "value": [
+              "descendant::DIV[@id=\"listview\"]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]",
+              "descendant::DIV[@id=\"listview\"]//TABLE"
+            ]
+          },
+          {
+            "id": "@id/partialWord",
+            "prob": 1,
+            "disabled": true,
+            "value": {
+              "elemId": "lui-id-46",
+              "tagName": "DIV",
+              "prefix": "DIV[@id=\"listview\"]//",
+              "suffix": "/DIV[3]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]",
+              "ratio": 0.242
+            }
+          },
+          {
+            "id": "@class/word",
+            "prob": 1,
+            "value": "DIV.lui_listview_centerR DIV.lui_listview_centerC TABLE.lui_listview_columntable_table"
+          },
+          {
+            "id": "path/ordinal",
+            "prob": 1,
+            "value": "/HTML[1]/BODY[1]/TABLE[1]/TBODY[1]/TR[1]/TD[3]/DIV[1]/DIV[5]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/TABLE[1]"
+          }
+        ]
+      },
+      "events": {
+        "onGetData": "getData_control1_1wczxR"
+      },
+      "intendedRole": "custom",
+      "roles": "element,custom",
+      "monitored": false,
+      "frameXPath": "",
+      "componentType": "custom"
+    }
+  },
+  "contexts": {
+    "context0_steCbq": {
+      "controls": [
+        "control0_HMVmei",
+        "control1_1wczxR"
+      ],
+      "anchors": [],
+      "urlAnchor": []
+    }
+  },
+  "flows": {
+    "flow0_hOJK4n": {
+      "toContexts": [
+        {
+          "toContextId": "context0_steCbq"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "page0_L4Tbq5": {
+      "contextId": "context0_steCbq",
+      "layout": [
+        {
+          "id": "uiControl0_DCnoaQ",
+          "controlId": "control0_HMVmei",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl0_DCnoaQ",
+                "onGetTemplate": "getTemplate_uiControl0_DCnoaQ"
+              }
+            }
+          }
+        },
+        {
+          "id": "uiControl1_00aSMd",
+          "controlId": "control1_1wczxR",
+          "display": {
+            "adapterId": "custom",
+            "type": "custom",
+            "adapter": {
+              "templateType": "react",
+              "events": {
+                "onDoAction": "doAction_uiControl1_00aSMd",
+                "onGetTemplate": "getTemplate_uiControl1_00aSMd"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "matchers": {
+    "page/title": {
+      "contexts": {
+        "context0_steCbq": [
+          "我的流程中心"
+        ]
+      }
+    },
+    "page/urls": {
+      "contexts": {
+        "context0_steCbq": [
+          "183.62.237.225:8090/sys/person/home.do?nav=153cb8f664e9b12388b9a754470b7cea"
+        ]
+      }
+    },
+    "page/ids": {
+      "contexts": {
+        "context0_steCbq": [
+          [
+            "_SEARCH_MODEL_",
+            "__notify_daiban__",
+            "__notify_daiyue__",
+            "criteria",
+            "fdStatus",
+            "listview",
+            "lui-id-",
+            "lui_portal_header_search_include",
+            "sys_person_usermask",
+            "sys_person_userpic",
+            "sys_person_userpic_img",
+            "top"
+          ]
+        ]
+      }
+    },
+    "page/classes": {
+      "contexts": {
+        "context0_steCbq": [
+          [
+            "arrow",
+            "arrow-inner",
+            "checkbox",
+            "clearfloat",
+            "clr",
+            "columnTable",
+            "com_author",
+            "com_goto",
+            "com_gototop",
+            "com_subject",
+            "commit-action",
+            "criteria",
+            "criteria-border",
+            "criteria-extra",
+            "criteria-extra-border",
+            "criteria-extra-more",
+            "criteria-popup-wapper",
+            "criteria-selected",
+            "criteria-selected-wapper",
+            "criterion",
+            "criterion-all",
+            "criterion-calendar",
+            "criterion-clear",
+            "criterion-collapse",
+            "criterion-expand",
+            "criterion-more",
+            "criterion-more-down",
+            "criterion-normal",
+            "criterion-options",
+            "criterion-other",
+            "criterion-selected",
+            "criterion-title",
+            "criterion-value",
+            "criterions",
+            "criterions-wapper",
+            "desk",
+            "dq_frame",
+            "emil_news",
+            "exit",
+            "hidden",
+            "listview",
+            "lui-component",
+            "lui_accordionpanel_content_c",
+            "lui_accordionpanel_content_frame",
+            "lui_accordionpanel_content_l",
+            "lui_accordionpanel_content_r",
+            "lui_accordionpanel_footer_c",
+            "lui_accordionpanel_footer_l",
+            "lui_accordionpanel_footer_r",
+            "lui_accordionpanel_frame",
+            "lui_accordionpanel_header_c",
+            "lui_accordionpanel_header_l",
+            "lui_accordionpanel_header_r",
+            "lui_accordionpanel_nav_c",
+            "lui_accordionpanel_nav_l",
+            "lui_accordionpanel_nav_r",
+            "lui_accordionpanel_nav_text",
+            "lui_accordionpanel_toggle_up",
+            "lui_icon_s",
+            "lui_icon_s_daiban",
+            "lui_icon_s_daiyue",
+            "lui_icon_s_default_filter",
+            "lui_icon_s_on_filter",
+            "lui_list_body_frame",
+            "lui_list_left_sidebar_frame",
+            "lui_list_nav_list",
+            "lui_list_nav_selected",
+            "lui_list_operation",
+            "lui_listview_body",
+            "lui_listview_centerC",
+            "lui_listview_centerL",
+            "lui_listview_centerR",
+            "lui_listview_columntable_table",
+            "lui_listview_footC",
+            "lui_listview_footL",
+            "lui_listview_footR",
+            "lui_nav",
+            "lui_paging_amount_center",
+            "lui_paging_amount_left",
+            "lui_paging_amount_right",
+            "lui_paging_box",
+            "lui_paging_btn",
+            "lui_paging_contentBox",
+            "lui_paging_content_centre",
+            "lui_paging_content_left",
+            "lui_paging_content_right",
+            "lui_paging_ellipsis",
+            "lui_paging_ellipsis_center",
+            "lui_paging_ellipsis_left",
+            "lui_paging_ellipsis_right",
+            "lui_paging_foot_centre",
+            "lui_paging_foot_left",
+            "lui_paging_foot_right",
+            "lui_paging_go_center",
+            "lui_paging_go_left",
+            "lui_paging_go_right",
+            "lui_paging_header_centre",
+            "lui_paging_header_left",
+            "lui_paging_header_right",
+            "lui_paging_jump_center",
+            "lui_paging_jump_left",
+            "lui_paging_jump_right",
+            "lui_paging_ml",
+            "lui_paging_mr",
+            "lui_paging_next",
+            "lui_paging_next_center",
+            "lui_paging_next_left",
+            "lui_paging_next_right",
+            "lui_paging_num_center",
+            "lui_paging_num_left",
+            "lui_paging_num_right",
+            "lui_paging_t_box",
+            "lui_paging_t_content_box",
+            "lui_paging_t_content_c",
+            "lui_paging_t_content_l",
+            "lui_paging_t_content_r",
+            "lui_paging_t_hasnext",
+            "lui_paging_t_next_c",
+            "lui_paging_t_next_l",
+            "lui_paging_t_next_r",
+            "lui_paging_t_notpre",
+            "lui_paging_t_page_info",
+            "lui_paging_t_page_info_current",
+            "lui_paging_t_page_info_total_page",
+            "lui_paging_t_pre_c",
+            "lui_paging_t_pre_l",
+            "lui_paging_t_pre_r",
+            "lui_paging_t_refresh",
+            "lui_paging_t_refresh_c",
+            "lui_paging_t_refresh_l",
+            "lui_paging_t_refresh_r",
+            "lui_paging_total_center",
+            "lui_paging_total_left",
+            "lui_paging_total_right",
+            "lui_panel_content_inside",
+            "lui_popup_border_content",
+            "lui_portal_header",
+            "lui_portal_header_daiban",
+            "lui_portal_header_daiban_div",
+            "lui_portal_header_daiyue",
+            "lui_portal_header_daiyue_div",
+            "lui_portal_header_logo_div",
+            "lui_portal_header_logo_img",
+            "lui_portal_header_nofixed",
+            "lui_portal_header_notify",
+            "lui_portal_header_search_btn",
+            "lui_portal_header_search_full_c",
+            "lui_portal_header_search_full_l",
+            "lui_portal_header_search_full_r",
+            "lui_portal_header_search_include",
+            "lui_portal_header_search_input",
+            "lui_portal_header_search_keyword_c",
+            "lui_portal_header_search_keyword_l",
+            "lui_portal_header_search_keyword_r",
+            "lui_portal_header_search_model_c",
+            "lui_portal_header_search_model_l",
+            "lui_portal_header_search_model_r",
+            "lui_portal_header_text",
+            "lui_portal_header_zone_content",
+            "lui_portal_header_zone_frame",
+            "lui_portal_header_zone_frame_h",
+            "lui_portal_header_zone_logo",
+            "lui_portal_header_zone_portal",
+            "lui_portal_header_zone_search",
+            "lui_portal_sidebar_c_c",
+            "lui_portal_sidebar_c_l",
+            "lui_portal_sidebar_c_r",
+            "lui_portal_sidebar_f_c",
+            "lui_portal_sidebar_f_l",
+            "lui_portal_sidebar_f_r",
+            "lui_portal_sidebar_h_c",
+            "lui_portal_sidebar_h_l",
+            "lui_portal_sidebar_h_r",
+            "lui_portal_table",
+            "lui_portlet_operations",
+            "lui_toolbar_btn",
+            "lui_toolbar_btn_c",
+            "lui_toolbar_btn_l",
+            "lui_toolbar_btn_r",
+            "lui_toolbar_content",
+            "lui_toolbar_frame_sort",
+            "lui_toolbar_left",
+            "lui_toolbar_right",
+            "lui_widget_btn",
+            "lui_widget_btn_icon",
+            "lui_widget_btn_txt",
+            "multi-option",
+            "radio",
+            "selected",
+            "text",
+            "title",
+            "twobar",
+            "ul_nav",
+            "user_edit",
+            "user_info",
+            "width"
+          ]
+        ]
+      }
+    },
+    "page/tagTriplets": {
+      "contexts": {
+        "context0_steCbq": [
+          [
+            "-/-/DIV",
+            "-/-/SCRIPT",
+            "-/-/TABLE",
+            "-/DIV/DIV",
+            "-/DIV/LINK",
+            "-/DIV/SCRIPT",
+            "-/TABLE/TBODY",
+            "A/SPAN/SPAN",
+            "DIV/A/SPAN",
+            "DIV/DIV/A",
+            "DIV/DIV/DIV",
+            "DIV/DIV/IMG",
+            "DIV/DIV/INPUT-button",
+            "DIV/DIV/INPUT-text",
+            "DIV/DIV/LI",
+            "DIV/DIV/P",
+            "DIV/DIV/SCRIPT",
+            "DIV/DIV/SPAN",
+            "DIV/DIV/TABLE",
+            "DIV/DIV/UL",
+            "DIV/LI/A",
+            "DIV/LI/SPAN",
+            "DIV/P/B",
+            "DIV/TABLE/TBODY",
+            "DIV/TABLE/THEAD",
+            "DIV/UL/DIV",
+            "DIV/UL/LI",
+            "LI/A/DIV",
+            "LI/A/I",
+            "LI/A/SPAN",
+            "LI/SPAN/INPUT-text",
+            "TABLE/TBODY/TR",
+            "TABLE/THEAD/TR",
+            "TBODY/TR/TD",
+            "TD/DIV/A",
+            "TD/DIV/DIV",
+            "TD/DIV/SCRIPT",
+            "TD/DIV/UL",
+            "TD/SPAN/INPUT-hidden",
+            "TD/SPAN/SPAN",
+            "THEAD/TR/TH",
+            "TR/TD/B",
+            "TR/TD/DIV",
+            "TR/TD/SPAN",
+            "UL/DIV/DIV",
+            "UL/DIV/LI",
+            "UL/LI/A"
+          ]
+        ]
+      }
+    }
+  }
+}

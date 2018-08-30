@@ -1,0 +1,32 @@
+{
+  "type": "adapter",
+  "short_name": "",
+  "version": "0.0.1",
+  "runtime_version": "2.7.0",
+  "description": "",
+  "options": {
+    "resource_intercept": {
+      "type": [],
+      "ignore": []
+    },
+    "resource_inject": []
+  },
+  "override_urls": [],
+  "adapter_urls": [
+    {
+      "title": "requestList",
+      "url": "adapter://request/plan/requestList/index.json",
+      "matcher": [
+        "^http:\\/\\/183\\.62\\.237\\.225:8090\\/sys\\/person\\/home\\.do\\?nav=153cb8f664e9b12388b9a754470b7cea#cri\\.q=myDoc:create"
+      ],
+      "demo": [
+        "http://183.62.237.225:8090/sys/person/home.do?nav=153cb8f664e9b12388b9a754470b7cea#cri.q=myDoc:create"
+      ]
+    }
+  ],
+  "name": "我的请求",
+  "default_url": "http://183.62.237.225:8090/sys/person/home.do?nav=153cb8f664e9b12388b9a754470b7cea#cri.q=myDoc:create",
+  "scope": "request",
+  "start_url": "http://183.62.237.225:8090/sys/person/home.do?nav=153cb8f664e9b12388b9a754470b7cea#cri.q=myDoc:create",
+  "update_time": 1535600056308
+}
